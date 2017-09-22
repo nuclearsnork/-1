@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int x1,x2,x3,x4,y1,y2,y3,y4,r2,r4,r3,sin,cos,S;
+    scanf("%d %d %d %d %d %d %d %d", &x1, &y1, &x2, &y2, &x3, &y3, &x4, &y4);
+    r2=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+    r3=sqrt((x1-x3)*(x1-x3)+(y1-y3)*(y1-y3));
+    r4=sqrt((x1-x4)*(x1-x4)+(y1-y4)*(y1-y4));
+    if (r2<=r3 && r3<r4)
+    {
+        S=r2*r3;
+    } else if (r2<=r4 && r4<r3)
+    {
+        S=r2*r4;
+    } else //if (r3<=r4 && r4<r2)
+    {
+        S=r4*r3;
+    }
+    printf("%d", S);
+    return 0;
+}
