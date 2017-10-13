@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i,n,a,b,c;
+    scanf("%d", &n);
+    a=1;
+    b=1;
+    c=0;
+    if (n==2, n==1)
+    printf("1");
+    else
+    {
+        for(i=0;i<n-2;i++)
+        {
+           c=a+b;
+           a=b;
+           b=c;
+        }
+        printf("%d\n", b);
+    }
+    return 0;
+}
