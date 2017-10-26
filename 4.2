@@ -3,8 +3,9 @@
 
 int main()
 {
-    int S,n,a[n],i,max,k;
+    int S,n,i,max,k;
     scanf("%d", &n);
+    int a[n];
     max=0;
     k=0;
     S=10000;
@@ -25,7 +26,7 @@ int main()
         if (max<=S)
         {
             S=S-max;
-            printf ("%d", max);
+            printf ("%d\n", max);
             max=0;
         }
         else
